@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    
+    font-family: 'Roboto',sans-serif;
+    background: #D3CCE3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+nav{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: #181818;
+    
+}
+
+header a{
+    padding: 1px 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    text-decoration: none; /*saca el subrayado*/
+}
+
+header a:hover{
+    color: hsl(0, 3%, 59%);
+    text-decoration: underline;
+}
+
+#init{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(imagenes/fotoinit2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    font-size: 3em;
+}
+
+#adop-dog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(imagenes/adopdog.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    font-size: 3em;
+}
+
+#adop-cat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(imagenes/adopcat.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    font-size: 3em;
+}
+
+#adop-hamster{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(imagenes/adophamster.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    font-size: 3em;
+}
+
+/*Boton Neon*/
+body .container-h a{
+    margin-top: 50px;
+    position:relative;
+    background-color:#ffffff ;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    padding: 13px 30px;
+    transition: 1s;
+    border-radius: 15px; 
+}
+body .container-h a::before{
+    content: '' ;
+    position: absolute;
+    inset: 2px;
+    background-color: rgb(27, 26, 26);
+    border-radius: 15px;
+}
+body .container-h a:hover{
+    background: var(--clr);
+    color: var(--clr);
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr)  ;
+}
+body .container-h a span{
+    position: relative;
+    z-index: 1;
+}
+body .container-h a i{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+body .container-h a i::before{
+    content: '' ;
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 40px;
+    height: 4px;
+    background-color: rgb(27, 26, 26);
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+body .container-h a:hover i::before{
+    width: 40px;
+    left: 20%;
+}
+body .container-h a i::after{
+    content: '' ;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 40px;
+    height: 5px;
+    background-color: rgb(27, 26, 26);
+    transform: translateX(-50%) skewX(325deg);
+    transition: 0.5s;
+}
+body .container-h a:hover i::after{
+    width: 40px;
+    left: 80%;
+}
+/*Boton Neon*/
+
+@media (min-width: 720px){ /*si pasa de 720 px cambia a esto*/
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    nav{
+        justify-content: center;
+        flex-direction: row;
+        padding-bottom: 1;
+        padding-right: 20px;
+    }
+
+}

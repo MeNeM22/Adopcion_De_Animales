@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url(../imagenes/regisfond.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    
+}
+
+nav{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: #181818;
+    top: 0;
+    
+}
+
+header a{
+    padding: 1px 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    text-decoration: none; /*saca el subrayado*/
+}
+
+header a:hover{
+    color: hsl(0, 3%, 59%);
+    text-decoration: underline;
+}
+
+.registro{
+    width: 500px;
+    height: 90%;
+    background: #181818;
+    padding: 90px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000000;
+}
+
+.registro h2{
+    font-size: 4em;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.controls{
+    width: 100%;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    border: 1px solid #000000;
+    font-family: 'calibri';
+    font-size: 20px;
+}
+
+.registro p{
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.registro a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.registro a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.registro .bottons{
+    width: 100%;
+    background: #625f5f;
+    border:none;
+    padding: 20px;
+    color: white;
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+@media (min-width: 720px){ /*si pasa de 720 px cambia a esto*/
+    header .container{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    nav{
+        justify-content: center;
+        flex-direction: row;
+        padding-bottom: 1;
+        padding-right: 20px;
+    }
+
+}

@@ -203,6 +203,20 @@ a:hover{
     --whatsapp:#26df89;
 }
 
+
+.videos-gatos{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.videos-gatos h2{
+    font-size: 3em;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    
+}
+
 .redes-sociales{
     display: flex;
     height: 10vh;

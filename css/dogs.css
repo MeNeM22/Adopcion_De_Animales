@@ -203,21 +203,35 @@ a:hover{
     --whatsapp:#26df89;
 }
 
-.redes-sociales{
+.video-perros{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.video-perros h2{
+    font-size: 3em;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    
+}
+
+
+.footer{
     display: flex;
     height: 10vh;
     align-items: center;
     justify-content: center;
 }
 
-.redes-sociales ul li{
+.footer ul li{
     display: inline-block;
     margin: 0 5px;
     width: 50px;
     height: 50px;
     text-align: center;
 }
-.redes-sociales ul li a{
+.footer ul li a{
     display: block;
     padding: 0 10px;
     color: white;
@@ -228,25 +242,25 @@ a:hover{
     transition: .2s;
 }
 
-.redes-sociales ul li a:hover{
+.footer ul li a:hover{
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 5px 5px 0px rgba(0,0,0, .4);
     filter: none;
 }
 
-.redes-sociales ul li .facebook{
+.footer ul li .facebook{
     background: var(--facebook);
 }
 
-.redes-sociales ul li .whatsapp{
+.footer ul li .whatsapp{
     background: var(--whatsapp);
 }
 
-.redes-sociales ul li .twitter{
+.footer ul li .twitter{
     background: var(--twitter);
 }
 
-.redes-sociales ul li .mail{
+.footer ul li .mail{
     background: var(--mail);
 }
 
